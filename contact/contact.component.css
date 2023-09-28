@@ -1,0 +1,56 @@
+* {
+    background-color: rgb(118, 150, 160) ;
+    color: white;
+ }
+
+ body {overflow-x: hidden;}
+
+ 
+ .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ 
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 64px;
+}
+/* 
+.w3-tag {
+    background-color:#000; 
+    color:#fff;
+    display:inline-block;
+    padding-left:8px;
+    padding-right:8px;
+    text-align:center;
+}  */
+
+
+input {
+     padding:8px;
+     display:block;
+     border:1px solid #ccc;
+     width:90%;
+     padding-top: 16px;
+     padding-bottom: 8px;
+     margin: 18px;
+     color: black;
+     background-color: white;
+}
+
+button {
+    border:1px solid #ccc;
+    display: block;
+    padding: 16px 16px;
+    overflow: hidden;
+    text-align: center;
+    background-color:white;
+    color: black;
+    margin: 10px auto;
+    border-bottom: 1px solid #ccc;
+}

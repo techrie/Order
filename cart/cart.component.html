@@ -1,0 +1,26 @@
+
+<h4 *ngIf="sum === 0; else display">Your cart is Empty..</h4>
+<ng-template #display>
+    <div class="pull-right">
+        <div class="col-xs-5">
+            <h3>Total: ${{sum}}</h3>
+        </div>
+    </div>
+</ng-template>
+
+<div class="row">
+    <div class="col-xs-7">
+         <app-cart-edit (priceUpdated)="updatePrice(i,$event)" 
+         (priceUpdatedAfterDel)="updatePriceAfterDelete(i)"
+         *ngFor="let cart of cartItems; let i = index" [ind]="i" [cart]="cart"></app-cart-edit>
+     <!-- <ul class="list-group">
+        <a class="list-group-item"
+        style="cursor: pointer;"
+         >
+        {{ cart.name }}   {{ cart.price }}</a>
+    </ul>   -->
+    </div>
+</div>
+
+
+
